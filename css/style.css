@@ -12,16 +12,20 @@
 	border: 0;
 	box-sizing: border-box;
 }
+
 li {
 	list-style: none;
 }
+
 a,
 a:visited {
 	text-decoration: none;
 }
+
 a:hover {
 	text-decoration: none;
 }
+
 h1,
 h2,
 h3,
@@ -31,27 +35,80 @@ h6 {
 	font-weight: inherit;
 	font-size: inherit;
 }
+
 img {
 	vertical-align: top;
 }
+
 html,
 body {
 	height: 100%;
 }
+
 html {
 	/* по умолчанию */
-	/* font-size: 16px;  */
+	font-size: 16px; 
 }
+
 body {
 	line-height: 1;
-	color: #fff;
-	background-color: #333;
-	font-family: "Roboto";
+	font-family: 'Work Sans', sans-serif;
+	;
 }
+
 .wrapper {
 	min-height: 100%;
 	overflow: hidden;
 	display: flex;
 	flex-direction: column;
 }
-/* ------------------------------ */
+
+/* Fonts */
+
+@font-face {
+	font-family: 'Work Sans';
+	src: local("Work Sans Regular"),
+		/* Если не получилось, загрузит woff2 */
+		url("/fonts/WorkSansRegular.woff2") format("woff2"),
+		/* Если браузер не поддерживает woff2, загрузит woff */
+		url("/fonts/WorkSansRegular.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Work Sans';
+	src: local("Work Sans Medium"),
+		/* Если не получилось, загрузит woff2 */
+		url("/fonts/WorkSansMedium.woff2") format("woff2"),
+		/* Если браузер не поддерживает woff2, загрузит woff */
+		url("/fonts/WorkSansMedium.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Work Sans';
+	src: local("Work Sans SemiBold"),
+		/* Если не получилось, загрузит woff2 */
+		url("/fonts/WorkSansSemiBold.woff2") format("woff2"),
+		/* Если браузер не поддерживает woff2, загрузит woff */
+		url("/fonts/WorkSansSemiBold.woff") format("woff");
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Work Sans';
+	src: local("Work Sans Bold"),
+		/* Если не получилось, загрузит woff2 */
+		url("/fonts/WorkSansBold.woff2") format("woff2"),
+		/* Если браузер не поддерживает woff2, загрузит woff */
+		url("/fonts/WorkSansBold.woff") format("woff");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
