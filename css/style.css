@@ -90,6 +90,22 @@ body {
 	background-color: #2396a5;
 }
 
+.title {
+	margin-bottom: 20px;
+	text-align: center;
+	color: #252626;
+	font-size: 38px;
+	font-weight: 700;
+}
+
+.descr {
+	margin: 0 auto 60px;
+	max-width: 597px;
+	color: #707273;
+	text-align: center;
+	line-height: 160%;
+}
+
 /* Fonts */
 
 @font-face {
@@ -201,4 +217,109 @@ body {
 .header__hero-btn {
 	padding: 15px 35px;
 	font-size: 21px;
+}
+
+/* Services */
+.services {
+	padding: 120px 0;
+}
+
+.services__top {
+	margin-bottom: 100px;
+}
+
+.services__list {
+	justify-content: space-between;
+}
+
+.services__item {
+	padding: 30px 22px 35px;
+	max-width: 261px;
+	text-align: center;
+	border-radius: 10px;
+	transition: background-color 0.3s ease-in-out;
+	cursor: pointer;
+}
+
+.services__item:hover {
+	outline: 1px solid #A3E0E8;
+	background-color: #A3E0E8;
+}
+
+.services__item-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto 20px;
+	width: 83px;
+	height: 83px;
+	border-radius: 100%;
+	background-color: #35AFBF;
+}
+
+.services__item-subtitle {
+	margin-bottom: 10px;
+	color: #252626;
+	font-size: 21px;
+	font-weight: 600;
+	line-height: 150%;
+}
+
+.services__item-text {
+	color: #707273;
+	font-weight: 400;
+	line-height: 160%;
+}
+
+.services__bottom {
+	justify-content: space-between;
+	align-items: center;
+}
+
+.services__bottom-name {
+	margin-bottom: 10px;
+	color: #252626;
+	font-size: 38px;
+	font-weight: 700;
+}
+
+.services__bottom-speciality {
+	position: relative;
+	margin-bottom: 20px;
+	color: #707273;
+	font-weight: 500;
+	line-height: 160%;
+}
+
+.services__bottom-speciality::after {
+	content: "";
+	position: absolute;
+	right: -65px;
+	top: 60%;
+	width: 61px;
+	height: 1px;
+	background-color: #707273;
+}
+
+.services__bottom-text {
+	margin-bottom: 35px;
+	max-width: 450px;
+	color: #707273;
+	line-height: 160%;
+}
+
+.services--more {
+	display: none;
+}
+
+.services__bottom-btn {
+	border: 1px solid rgba(53, 175, 191, 0.20);
+	color: #35AFBF;
+	font-weight: 500;
+	line-height: 120%;
+	background-color: transparent;
+}
+
+.services__bottom-btn:hover {
+	background-color: #cbf2f9;
 }
