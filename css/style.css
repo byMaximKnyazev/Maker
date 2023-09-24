@@ -323,3 +323,26 @@ body {
 .services__bottom-btn:hover {
 	background-color: #cbf2f9;
 }
+
+/* How we work */
+.how-we-work {
+	padding: 125px 0;
+	text-align: center;
+	background: url('../img/how-we-work/bg.jpg') center center / cover no-repeat;
+}
+
+.how-we-work__title {
+	color: #fff;
+}
+
+.how-we-work__descr {
+	margin-bottom: 36px;
+	max-width: 765px;
+	color: #fff;
+}
+
+.how-we-work__play {
+	border-radius: 50%;
+	cursor: pointer;
+}
+
